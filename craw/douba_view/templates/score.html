@@ -117,37 +117,14 @@
                         <div class="section-heading">
                             <h2>我们的<span> 内容 </span></h2>
                             <h4>
-                                我们为您提供了4个课查看内容，分别是电影，评分，词云和我们的团队
-                                您可以点击的对应的箱门进行查看
+                                豆瓣top250电影评分分布图
                             </h4>
                         </div>
                     </div>
                 </div>
-                <div class="" style="div-height:100">
-                    <table class="table table-striped">
-                        <tr>
-                            <td>排名</td>
-                            <td>电影中文名</td>
-                            <td>英文名</td>
-                            <td>图片</td>
-                            <td>评分</td>
-                            <td>评价人数</td>
-                            <td>相关</td>
-                            <td>其他信息</td>
-                        </tr>
-                        {% for movie in datalist %}
-                        <tr>
-                            <td>{{movie[0]}}</td>
-                            <td><a href="{{movie[1]}}" target="_blank">{{movie[3]}}</a></td>
-                            <td>{{movie[4]}}</td>
-                            <td><img width="300" src="{{movie[2]}}"></td>
-                            <td>{{movie[5]}}</td>
-                            <td>{{movie[6]}}</td>
-                            <td>{{movie[7]}}</td>
-                            <td>{{movie[8]}}</td>
-                        </tr>
-                        {% endfor %}
-                    </table>
+                <!-- 评分分布 -->
+                <div  id="myechart" style="width: 600px;height:400px;" class="container">
+
                 </div>
             </div>
         </section>
@@ -239,5 +216,34 @@
 <script src="static/js/scrollit.min.js"></script>
 <!--// Main Js //-->
 <script src="static/js/main.js"></script>
+<!--// echarts //-->
+<script src="static/js/echarts.min.js"></script>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('myechart'));
+
+        // 指定图表的配置项和数据
+        var option = {
+            title: {
+                text: '电影评分分布'
+            },
+            tooltip: {},
+            legend: {
+                data:['评分']
+            },
+            xAxis: {
+                data: {{score_list}}
+            },
+            yAxis: {},
+            series: [{
+                name: '评分',
+                type: 'bar',
+                data: {{group_list}}
+            }]
+        };
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
 </body>
 </html>
