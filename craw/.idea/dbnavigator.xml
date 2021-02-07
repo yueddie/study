@@ -24,43 +24,24 @@
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
     <loaded-nodes>
-      <connection connection-id="761cc711-31a1-4a5f-9542-4a79c7874943">
-        <schema name="main" object-types="view, table" />
+      <connection connection-id="0469db93-f4dc-4484-9cc3-2d1aedc30c70">
+        <schema name="main" object-types="dataset trigger, table, index, constraint, view, column" />
       </connection>
     </loaded-nodes>
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
-    <connection id="2e47b441-ee7a-4379-b4c3-98b3666d9c38">
-      <console name="test" type="STANDARD" schema="main" session="Main" />
-    </connection>
-    <connection id="761cc711-31a1-4a5f-9542-4a79c7874943">
-      <console name="douban_movie" type="STANDARD" schema="main" session="Main" />
-    </connection>
-    <connection id="6cd086dc-8a9e-4736-a553-0c24b28ff455">
-      <console name="Connection" type="STANDARD" schema="" session="Main" />
+    <connection id="0469db93-f4dc-4484-9cc3-2d1aedc30c70">
+      <console name="douban" type="STANDARD" schema="main" session="Main" />
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
-    <connection id="2e47b441-ee7a-4379-b4c3-98b3666d9c38" />
-    <connection id="761cc711-31a1-4a5f-9542-4a79c7874943" />
-    <connection id="6cd086dc-8a9e-4736-a553-0c24b28ff455" />
+    <connection id="0469db93-f4dc-4484-9cc3-2d1aedc30c70" />
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
-    <filter-actions connection-id="761cc711-31a1-4a5f-9542-4a79c7874943" dataset="main.movie" active-filter-id="EMPTY_FILTER" />
-    <filter-actions connection-id="2e47b441-ee7a-4379-b4c3-98b3666d9c38" dataset="main.student" active-filter-id="">
-      <filter id="f72c6710-fdd9-4604-8831-4bfea32bee58" name="1" temporary="false" custom-name="false" type="basic" join-type="AND">
-        <condition column="id" operator="=" value="1" active="true" />
-        <condition column="name" operator="=" value="" active="true" />
-      </filter>
-    </filter-actions>
-    <filter-actions connection-id="2e47b441-ee7a-4379-b4c3-98b3666d9c38" dataset="main.sse" active-filter-id="EMPTY_FILTER">
-      <filter id="ce98c584-d51f-4ee0-a4ad-fba28eb57087" name="Filter 1" temporary="false" custom-name="false" type="basic" join-type="AND">
-        <condition column="id" operator="=" value="" active="true" />
-      </filter>
-    </filter-actions>
+    <filter-actions connection-id="0469db93-f4dc-4484-9cc3-2d1aedc30c70" dataset="main.movie" active-filter-id="EMPTY_FILTER" />
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />
@@ -88,9 +69,9 @@
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
-      <connection id="2e47b441-ee7a-4379-b4c3-98b3666d9c38" active="true">
+      <connection id="0469db93-f4dc-4484-9cc3-2d1aedc30c70" active="true">
         <database>
-          <name value="test" />
+          <name value="douban" />
           <description value="" />
           <database-type value="SQLITE" />
           <config-type value="BASIC" />
@@ -103,181 +84,7 @@
           <port value="1234" />
           <database value="database" />
           <files>
-            <file path="E:\Code\pc\test\test.db" schema="main" />
-          </files>
-          <type value="NONE" />
-          <user value="" />
-          <deprecated-pwd value="" />
-        </database>
-        <properties>
-          <auto-commit value="false" />
-        </properties>
-        <ssh-settings>
-          <active value="false" />
-          <proxy-host value="" />
-          <proxy-port value="22" />
-          <proxy-user value="" />
-          <deprecated-proxy-pwd value="" />
-          <auth-type value="PASSWORD" />
-          <key-file value="" />
-          <key-passphrase value="" />
-        </ssh-settings>
-        <ssl-settings>
-          <active value="false" />
-          <certificate-authority-file value="" />
-          <client-certificate-file value="" />
-          <client-key-file value="" />
-        </ssl-settings>
-        <details>
-          <charset value="UTF-8" />
-          <session-management value="true" />
-          <ddl-file-binding value="true" />
-          <database-logging value="false" />
-          <connect-automatically value="false" />
-          <restore-workspace value="true" />
-          <restore-workspace-deep value="true" />
-          <environment-type value="default" />
-          <connectivity-timeout value="5" />
-          <idle-time-to-disconnect value="30" />
-          <idle-time-to-disconnect-pool value="5" />
-          <credential-expiry-time value="10" />
-          <max-connection-pool-size value="7" />
-          <alternative-statement-delimiter value="" />
-        </details>
-        <object-filters hide-empty-schemas="false" hide-pseudo-columns="false">
-          <object-type-filter use-master-settings="true">
-            <object-type name="SCHEMA" enabled="true" />
-            <object-type name="USER" enabled="true" />
-            <object-type name="ROLE" enabled="true" />
-            <object-type name="PRIVILEGE" enabled="true" />
-            <object-type name="CHARSET" enabled="true" />
-            <object-type name="TABLE" enabled="true" />
-            <object-type name="VIEW" enabled="true" />
-            <object-type name="MATERIALIZED_VIEW" enabled="true" />
-            <object-type name="NESTED_TABLE" enabled="true" />
-            <object-type name="COLUMN" enabled="true" />
-            <object-type name="INDEX" enabled="true" />
-            <object-type name="CONSTRAINT" enabled="true" />
-            <object-type name="DATASET_TRIGGER" enabled="true" />
-            <object-type name="DATABASE_TRIGGER" enabled="true" />
-            <object-type name="SYNONYM" enabled="true" />
-            <object-type name="SEQUENCE" enabled="true" />
-            <object-type name="PROCEDURE" enabled="true" />
-            <object-type name="FUNCTION" enabled="true" />
-            <object-type name="PACKAGE" enabled="true" />
-            <object-type name="TYPE" enabled="true" />
-            <object-type name="TYPE_ATTRIBUTE" enabled="true" />
-            <object-type name="ARGUMENT" enabled="true" />
-            <object-type name="DIMENSION" enabled="true" />
-            <object-type name="CLUSTER" enabled="true" />
-            <object-type name="DBLINK" enabled="true" />
-          </object-type-filter>
-          <object-name-filters />
-        </object-filters>
-      </connection>
-      <connection id="761cc711-31a1-4a5f-9542-4a79c7874943" active="true">
-        <database>
-          <name value="douban_movie" />
-          <description value="" />
-          <database-type value="SQLITE" />
-          <config-type value="BASIC" />
-          <database-version value="3.3" />
-          <driver-source value="BUILTIN" />
-          <driver-library value="" />
-          <driver value="" />
-          <url-type value="FILE" />
-          <host value="localhost" />
-          <port value="1234" />
-          <database value="database" />
-          <files>
-            <file path="E:\Code\pc\douban\movie250.db" schema="main" />
-          </files>
-          <type value="NONE" />
-          <user value="" />
-          <deprecated-pwd value="" />
-        </database>
-        <properties>
-          <auto-commit value="false" />
-        </properties>
-        <ssh-settings>
-          <active value="false" />
-          <proxy-host value="" />
-          <proxy-port value="22" />
-          <proxy-user value="" />
-          <deprecated-proxy-pwd value="" />
-          <auth-type value="PASSWORD" />
-          <key-file value="" />
-          <key-passphrase value="" />
-        </ssh-settings>
-        <ssl-settings>
-          <active value="false" />
-          <certificate-authority-file value="" />
-          <client-certificate-file value="" />
-          <client-key-file value="" />
-        </ssl-settings>
-        <details>
-          <charset value="UTF-8" />
-          <session-management value="true" />
-          <ddl-file-binding value="true" />
-          <database-logging value="false" />
-          <connect-automatically value="true" />
-          <restore-workspace value="true" />
-          <restore-workspace-deep value="true" />
-          <environment-type value="default" />
-          <connectivity-timeout value="5" />
-          <idle-time-to-disconnect value="30" />
-          <idle-time-to-disconnect-pool value="5" />
-          <credential-expiry-time value="10" />
-          <max-connection-pool-size value="7" />
-          <alternative-statement-delimiter value="" />
-        </details>
-        <object-filters hide-empty-schemas="false" hide-pseudo-columns="false">
-          <object-type-filter use-master-settings="true">
-            <object-type name="SCHEMA" enabled="true" />
-            <object-type name="USER" enabled="true" />
-            <object-type name="ROLE" enabled="true" />
-            <object-type name="PRIVILEGE" enabled="true" />
-            <object-type name="CHARSET" enabled="true" />
-            <object-type name="TABLE" enabled="true" />
-            <object-type name="VIEW" enabled="true" />
-            <object-type name="MATERIALIZED_VIEW" enabled="true" />
-            <object-type name="NESTED_TABLE" enabled="true" />
-            <object-type name="COLUMN" enabled="true" />
-            <object-type name="INDEX" enabled="true" />
-            <object-type name="CONSTRAINT" enabled="true" />
-            <object-type name="DATASET_TRIGGER" enabled="true" />
-            <object-type name="DATABASE_TRIGGER" enabled="true" />
-            <object-type name="SYNONYM" enabled="true" />
-            <object-type name="SEQUENCE" enabled="true" />
-            <object-type name="PROCEDURE" enabled="true" />
-            <object-type name="FUNCTION" enabled="true" />
-            <object-type name="PACKAGE" enabled="true" />
-            <object-type name="TYPE" enabled="true" />
-            <object-type name="TYPE_ATTRIBUTE" enabled="true" />
-            <object-type name="ARGUMENT" enabled="true" />
-            <object-type name="DIMENSION" enabled="true" />
-            <object-type name="CLUSTER" enabled="true" />
-            <object-type name="DBLINK" enabled="true" />
-          </object-type-filter>
-          <object-name-filters />
-        </object-filters>
-      </connection>
-      <connection id="6cd086dc-8a9e-4736-a553-0c24b28ff455" active="true">
-        <database>
-          <name value="Connection" />
-          <description value="" />
-          <database-type value="SQLITE" />
-          <config-type value="BASIC" />
-          <database-version value="9999.0" />
-          <driver-source value="BUILTIN" />
-          <driver-library value="" />
-          <driver value="" />
-          <url-type value="FILE" />
-          <host value="localhost" />
-          <port value="1234" />
-          <database value="database" />
-          <files>
-            <file path="sqlite.db" schema="main" />
+            <file path="E:\study\craw\douba_view\movie250.db" schema="main" />
           </files>
           <type value="NONE" />
           <user value="" />
